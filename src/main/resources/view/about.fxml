@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AboutController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="123.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+            <Label layoutX="223.0" layoutY="28.0" text="About Us">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="147.0" prefHeight="182.0" prefWidth="536.0" text="&quot;Thogakade&quot; is your one stop destination for everyday essentials and quality products at affordable prices. We’re dedicated to providing our customers with a friendly shopping experience and trusted service. From household items to personal needs, Thogakade brings everything you need under one roof. Our goal is to make your daily shopping simple, convenient, and enjoyable. Because at Thogakade, customer satisfaction always comes first." textAlignment="CENTER" wrapText="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
