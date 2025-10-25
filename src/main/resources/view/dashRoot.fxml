@@ -6,11 +6,10 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashRootController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="400.0" stroke="BLACK" strokeType="INSIDE" width="190.0" />
-      <AnchorPane layoutX="190.0" prefHeight="400.0" prefWidth="410.0" />
+      <AnchorPane fx:id="root" layoutX="190.0" prefHeight="400.0" prefWidth="410.0" />
       <Label layoutX="40.0" layoutY="27.0" text="THOGAKADE">
          <font>
             <Font name="System Bold" size="18.0" />
