@@ -9,7 +9,6 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="484.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f4bb5" height="86.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
@@ -62,7 +61,7 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Button>
-      <TableView fx:id="tblItem" layoutX="48.0" layoutY="239.0" prefHeight="200.0" prefWidth="514.0">
+      <TableView fx:id="tblItem" layoutX="48.0" layoutY="239.0" prefHeight="200.0" prefWidth="514.0" stylesheets="@../css/Style.css">
         <columns>
           <TableColumn fx:id="colCode" prefWidth="111.0" text="Code" />
           <TableColumn fx:id="colDescription" prefWidth="141.0" text="Description" />
