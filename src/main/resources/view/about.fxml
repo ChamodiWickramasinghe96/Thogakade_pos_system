@@ -1,23 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AboutController">
+<AnchorPane prefHeight="417.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AboutController">
    <children>
-      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+      <ImageView fitHeight="417.0" fitWidth="646.0" layoutX="-56.0" opacity="0.3" pickOnBounds="true">
+         <image>
+            <Image url="@../images/about_us.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="206.0" layoutY="14.0" text="ABOUT US" textFill="#323031">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Pane layoutX="89.0" layoutY="67.0" prefHeight="351.0" prefWidth="501.0">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="123.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
-            <Label layoutX="223.0" layoutY="28.0" text="About Us">
+            <Label layoutX="-58.0" layoutY="-5.0" prefHeight="321.0" prefWidth="537.0" text="About Sandagiri StoresWelcome to Sandagiri Stores, your trusted neighborhood grocery shop in Sri Lanka. We take pride in offering a wide range of high-quality groceries, household items, and fresh produce at affordable prices. Our goal is to provide a convenient and friendly shopping experience for every customer who walks through our doors. With our modern storefront and commitment to excellent service, Sandagiri Stores continues to serve the community with honesty, reliability, and care making your everyday shopping easier and more enjoyable." textAlignment="CENTER" wrapText="true">
                <font>
-                  <Font name="System Bold" size="36.0" />
+                  <Font name="Bodoni MT Bold" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="34.0" layoutY="147.0" prefHeight="182.0" prefWidth="536.0" text="&quot;Thogakade&quot; is your one stop destination for everyday essentials and quality products at affordable prices. We’re dedicated to providing our customers with a friendly shopping experience and trusted service. From household items to personal needs, Thogakade brings everything you need under one roof. Our goal is to make your daily shopping simple, convenient, and enjoyable. Because at Thogakade, customer satisfaction always comes first." textAlignment="CENTER" wrapText="true" />
          </children>
-      </AnchorPane>
+      </Pane>
    </children>
 </AnchorPane>

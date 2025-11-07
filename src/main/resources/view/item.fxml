@@ -1,67 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="484.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemController">
+<AnchorPane fx:id="itemContext" prefHeight="417.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f4bb5" height="86.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
-      <Label layoutX="182.0" layoutY="17.0" text="ITEM FORM">
-         <font>
-            <Font name="System Bold" size="36.0" />
-         </font>
-      </Label>
-      <Label layoutX="48.0" layoutY="111.0" text="CODE">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
-      </Label>
-      <Label layoutX="314.0" layoutY="111.0" text="DESCRIPTION">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
-      </Label>
-      <Label layoutX="53.0" layoutY="157.0" text="QTY">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
-      </Label>
-      <Label layoutX="314.0" layoutY="157.0" text="UNIT PRICE">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
-      </Label>
-      <TextField fx:id="txtCode" layoutX="108.0" layoutY="107.0" />
-      <TextField fx:id="txtDescription" layoutX="412.0" layoutY="107.0" />
-      <TextField fx:id="txtQty" layoutX="108.0" layoutY="153.0" />
-      <TextField fx:id="txtUnitPrice" layoutX="412.0" layoutY="153.0" />
-      <Button layoutX="310.0" layoutY="190.0" mnemonicParsing="false" onAction="#btnAddItemOnAction" text="Add">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
-      </Button>
-      <Button layoutX="363.0" layoutY="190.0" mnemonicParsing="false" onAction="#btnUpdateItemOnAction" text="Update">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
-      </Button>
-      <Button layoutX="435.0" layoutY="190.0" mnemonicParsing="false" onAction="#btnDeleteItemOnAction" text="Delete">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
-      </Button>
-      <Button layoutX="502.0" layoutY="190.0" mnemonicParsing="false" onAction="#btnSearchItemOnAction" text="Search">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
-      </Button>
-      <TableView fx:id="tblItem" layoutX="48.0" layoutY="239.0" prefHeight="200.0" prefWidth="514.0" stylesheets="@../css/Style.css">
+      <TableView fx:id="tblItem" layoutX="39.0" layoutY="153.0" prefHeight="200.0" prefWidth="514.0" stylesheets="@../css/Style.css">
         <columns>
           <TableColumn fx:id="colCode" prefWidth="111.0" text="Code" />
           <TableColumn fx:id="colDescription" prefWidth="141.0" text="Description" />
@@ -69,10 +18,44 @@
             <TableColumn fx:id="colUnitPrice" prefWidth="116.0" text="Unit Price" />
         </columns>
       </TableView>
-      <Button layoutX="502.0" layoutY="446.0" mnemonicParsing="false" onAction="#btnReloadItemOnAction" text="Reload">
+      <Label layoutX="232.0" layoutY="16.0" text="ITEM FORM">
          <font>
-            <Font name="System Bold" size="13.0" />
+            <Font name="System Bold" size="24.0" />
          </font>
-      </Button>
+      </Label>
+      <JFXButton layoutX="464.0" layoutY="20.0" onAction="#btnAddOnAction" prefHeight="27.0" prefWidth="91.0" style="-fx-background-color: #2ecc71;" text="Add">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="38.0" layoutY="20.0" onAction="#btnBacktoHomeOnAction" prefHeight="27.0" prefWidth="99.0" style="-fx-background-color: #718093;" text="Back to home">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtCode" layoutX="38.0" layoutY="64.0" prefHeight="25.0" prefWidth="99.0" promptText="Code" />
+      <JFXTextField fx:id="txtQty" layoutX="312.0" layoutY="64.0" prefHeight="25.0" prefWidth="99.0" promptText="Qty" />
+      <JFXTextField fx:id="txtDescription" layoutX="169.0" layoutY="64.0" prefHeight="25.0" prefWidth="99.0" promptText="Description" />
+      <JFXTextField fx:id="txtUnitPrice" layoutX="453.0" layoutY="64.0" prefHeight="25.0" prefWidth="99.0" promptText="Unit Price" />
+      <JFXButton layoutX="454.0" layoutY="111.0" onAction="#btnUpdateOnAction" prefHeight="27.0" prefWidth="99.0" style="-fx-background-color: #f1c40f;" text="Update">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="38.0" layoutY="111.0" onAction="#btnSearchOnAction" prefHeight="27.0" prefWidth="298.0" style="-fx-background-color: #dcdde1;" text="Search">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="346.0" layoutY="111.0" onAction="#btnDeleteOnAction" prefHeight="27.0" prefWidth="99.0" style="-fx-background-color: #e74c3c;" text="Delete">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="478.0" layoutY="365.0" onAction="#btnReloadOnAction" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #EE5A24;" text="Reload">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </JFXButton>
    </children>
 </AnchorPane>

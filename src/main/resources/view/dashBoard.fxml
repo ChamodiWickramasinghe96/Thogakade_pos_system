@@ -1,51 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashComponentController">
    <children>
-      <AnchorPane layoutX="-2.0" prefHeight="400.0" prefWidth="607.0">
+      <AnchorPane layoutX="-2.0" prefHeight="400.0" prefWidth="607.0" style="-fx-background-color: #FFF;">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#891fff" height="101.0" stroke="BLACK" strokeType="INSIDE" width="607.0" />
-            <Label layoutX="137.0" layoutY="33.0" text="THOGAKADE DASHBOARD">
+            <Rectangle fx:id="dashComponentContext" arcHeight="5.0" arcWidth="5.0" fill="#d2e2f2" height="401.0" layoutX="303.0" stroke="#bac0d1" strokeType="INSIDE" width="305.0" />
+            <Label layoutX="289.0" layoutY="14.0" prefHeight="35.0" prefWidth="292.0" text="          Sandagiri Store">
                <font>
-                  <Font name="System Bold" size="24.0" />
+                  <Font name="Arial Bold" size="28.0" />
                </font>
             </Label>
-            <Label layoutX="94.0" layoutY="224.0" text="Customer Count">
+            <Label layoutX="413.0" layoutY="147.0" text="Customer Count">
                <font>
-                  <Font name="System Bold" size="14.0" />
+                  <Font name="Bodoni MT Bold" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="426.0" layoutY="224.0" text="Item Count">
+            <Label layoutX="430.0" layoutY="225.0" text="Item Count">
                <font>
-                  <Font name="System Bold" size="14.0" />
+                  <Font name="Bodoni MT Bold" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="270.0" layoutY="224.0" text="Order Count">
+            <Label layoutX="423.0" layoutY="315.0" text="Order Count">
                <font>
-                  <Font name="System Bold" size="14.0" />
+                  <Font name="Bodoni MT Bold" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="134.0" layoutY="174.0" text="25">
+            <Label layoutX="453.0" layoutY="116.0" text="25">
                <font>
-                  <Font size="18.0" />
+                  <Font name="Arial" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="297.0" layoutY="174.0" text="25">
+            <Label layoutX="457.0" layoutY="278.0" text="25">
                <font>
-                  <Font size="18.0" />
+                  <Font name="Arial" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="452.0" layoutY="176.0" text="25">
+            <Label layoutX="457.0" layoutY="192.0" text="25">
                <font>
-                  <Font size="18.0" />
+                  <Font name="Arial" size="20.0" />
                </font>
             </Label>
+            <ImageView fitHeight="225.0" fitWidth="269.0" layoutX="20.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/dashboard_img.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="406.0" layoutY="56.0" text="Dash Board">
+               <font>
+                  <Font name="AdobeDevanagari-BoldItalic" size="24.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="11.0" layoutY="7.0" onAction="#btnBacktoHomeOnAction" prefHeight="27.0" prefWidth="99.0" style="-fx-background-color: #718093;" text="Back to home">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </JFXButton>
          </children>
       </AnchorPane>
    </children>

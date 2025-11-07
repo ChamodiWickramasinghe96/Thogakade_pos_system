@@ -1,44 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashRootController">
+<AnchorPane fx:id="dashBoardContext" prefHeight="288.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashRootController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="400.0" stroke="BLACK" strokeType="INSIDE" width="190.0" />
-      <AnchorPane fx:id="root" layoutX="190.0" prefHeight="400.0" prefWidth="410.0" />
-      <Label layoutX="40.0" layoutY="27.0" text="THOGAKADE">
+      <Label layoutX="17.0" layoutY="14.0" prefHeight="19.0" prefWidth="176.0" text="Sandagiri Stores">
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font name="Marlett" size="20.0" />
          </font>
       </Label>
-      <Button layoutX="40.0" layoutY="90.0" mnemonicParsing="false" onAction="#btnDashboardOnAction" text="Dashboard">
+      <JFXButton layoutX="58.0" layoutY="77.0" onAction="#btnDashboardOnAction" prefHeight="68.0" prefWidth="166.0" style="-fx-background-color: #1abc9c;" text="Dash-Board">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="Book Antiqua Bold" size="24.0" />
          </font>
-      </Button>
-      <Button layoutX="40.0" layoutY="134.0" mnemonicParsing="false" onAction="#btnCustomerOnAction" prefHeight="30.0" prefWidth="90.0" text="Customer">
+      </JFXButton>
+      <JFXButton layoutX="246.0" layoutY="77.0" onAction="#btnCustomerOnAction" prefHeight="68.0" prefWidth="166.0" style="-fx-background-color: #3498db;" text="Customer">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="Book Antiqua Bold" size="24.0" />
          </font>
-      </Button>
-      <Button layoutX="40.0" layoutY="177.0" mnemonicParsing="false" onAction="#btnItemOnAction" prefHeight="30.0" prefWidth="90.0" text="Item">
+      </JFXButton>
+      <JFXButton layoutX="435.0" layoutY="77.0" onAction="#btnItemOnAction" prefHeight="68.0" prefWidth="166.0" style="-fx-background-color: #40739e;" text="Item">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="Book Antiqua Bold" size="24.0" />
          </font>
-      </Button>
-      <Button layoutX="40.0" layoutY="222.0" mnemonicParsing="false" onAction="#btnOrderOnAction" prefHeight="30.0" prefWidth="90.0" text="Order">
+      </JFXButton>
+      <JFXButton layoutX="152.0" layoutY="161.0" onAction="#btnOrderOnAction" prefHeight="62.0" prefWidth="166.0" style="-fx-background-color: #e84118;" text="Order">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="Book Antiqua Bold" size="24.0" />
          </font>
-      </Button>
-      <Button layoutX="40.0" layoutY="268.0" mnemonicParsing="false" onAction="#btnAboutOnAction" prefHeight="30.0" prefWidth="90.0" text="About">
+      </JFXButton>
+      <JFXButton layoutX="358.0" layoutY="159.0" onAction="#btnAboutOnAction" prefHeight="62.0" prefWidth="166.0" style="-fx-background-color: #e1b12c;" text="About">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="Book Antiqua Bold" size="24.0" />
          </font>
-      </Button>
+      </JFXButton>
+      <Label layoutX="7.0" layoutY="258.0" text="sandagiristores@123@gmail.com" />
+      <Label fx:id="lblDate" layoutX="450.0" layoutY="18.0" prefHeight="19.0" prefWidth="86.0" text="yyyy/mm/dd">
+         <font>
+            <Font name="Marlett" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="537.0" layoutY="6.0" orientation="VERTICAL" prefHeight="51.0" prefWidth="4.0" />
+      <Label fx:id="lblTime" layoutX="553.0" layoutY="17.0" prefHeight="19.0" prefWidth="48.0" text="00 : 00">
+         <font>
+            <Font name="Marlett" size="12.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

@@ -1,4 +1,4 @@
-package modal;
+package model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,9 +9,9 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Item {
-    private String code;
-    private String description;
-    private int qty;
-    private double unitPrice;
+public class OrderDetails {
+    private String orderId;
+    private String itemCode;
+    private Integer qty;
+    private Double unitPrice;
 }

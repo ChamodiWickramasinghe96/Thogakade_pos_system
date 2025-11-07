@@ -1,4 +1,8 @@
 package repository.custom;
 
-public interface CustomerRepository {
+import model.Customer;
+import repository.CrudRepository;
+
+public interface CustomerRepository extends CrudRepository<Customer,String> {
+
 }
